@@ -11,7 +11,8 @@ function calcEstimativa(){
 		
 		if(resto > 0){
 			if(tempo/40 > 0){
-				emDias = parseInt(tempo/40) + ' semana(s) e ' + Math.ceil(resto/8) + ' dias';
+                if(parseInt(tempo/40)>0) emDias = parseInt(tempo/40) + ' semana(s) e ' + Math.ceil(resto/8) + ' dias';
+                else emDias = Math.ceil(resto/8) + ' dias';
 			}
 		}	
 		else if(tempo /40 > 0){
