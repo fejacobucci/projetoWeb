@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>apontamentoHoras</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar-1.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar-2.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Formulario-Farmacia.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar-1.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="assets/css/Lista-Productos-Canito.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body style="width: auto;height: auto;">
+    <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar" style="margin: 5px;width: auto;height: auto;padding: 1px;">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Meus Dados</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Logout</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div style="width: auto;height: auto;">
+        <div class="container" style="width: auto;height: auto;">
+            <div class="row" style="width: auto;height: auto;">
+                <div class="col-md-4 col-lg-10" style="width: auto;height: auto;">
+                    <h2 style="width: 343px;">Apontamento de Horas</h2>
+                </div>
+                <div class="col-md-4 col-lg-2 d-flex justify-content-center align-items-center" style="width: auto;height: auto;"><button class="btn btn-primary d-flex align-items-center align-self-center" type="button" style="height: 38px;background-color: rgb(21,221,4);">SALVAR&nbsp;<i class="fa fa-plus-circle"></i></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="form-row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="form-group">
+                                <div class="col-sm-4"><label class="col-form-label" style="font-family:Lato, sans-serif;font-weight:normal;" for="nombre">Projeto</label></div>
+                                <div class="col-sm-8" id="projeto" name="projeto"><select class="form-control" id="projeto" name="projeto"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4"><label class="col-form-label" style="font-family:Lato, sans-serif;font-weight:normal;" for="titular">Tempo Utilizado (em horas)</label></div>
+                                <div class="col-sm-8 col-lg-4"><input class="form-control" type="text" id="tempoUtilizado" name="titular" style="width: auto;height: auto;"></div>
+                                <div class="col-sm-4"><label style="font-family:Lato, sans-serif;font-weight:normal;" for="nombre">Atividade</label><select class="form-control" id="tarefa" name="tarefa"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
+                                <div
+                                    class="col-lg-4"><label style="font-family:Lato, sans-serif;font-weight:normal;" for="nombre">Data da Execução</label><input class="form-control" type="date"></div>
+                            <div class="col-lg-6"><label style="font-family:Lato, sans-serif;font-weight:normal;" for="nombre">Descrição ou Observação</label><textarea class="form-control" id="anotacao" name="anotacao"></textarea></div>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/novoProjeto.js"></script>
+</body>
+
+</html>
