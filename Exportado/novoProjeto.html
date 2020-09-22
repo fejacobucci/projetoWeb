@@ -4,81 +4,73 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>novoprojeto</title>
+    <title>listaProjetos</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar-1.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar-2.css">
+    <link rel="stylesheet" href="assets/css/Dark-NavBar.css">
     <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar-1.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="assets/css/Lista-Productos-Canito.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
 </head>
 
-<body>
-    <div class="row">
-        <div class="col">
-            <nav class="navbar navbar-light navbar-expand-md" style="background-color: rgba(206,232,251,0.6);width: 100%;">
-                <div class="container-fluid"><a class="navbar-brand" href="#">Brand</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse"
-                        id="navcol-1">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
-                        </ul>
-                    </div>
+<body style="width: auto;height: auto;">
+    <nav class="navbar navbar-dark navbar-expand-md" id="app-navbar" style="margin: 5px;width: auto;height: auto;">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><i class="icon ion-ios-infinite" id="brand-logo"></i></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div style="width: auto;height: auto;">
+        <div class="container" style="width: auto;height: auto;">
+            <div class="row" style="width: auto;height: auto;">
+                <div class="col-md-4" style="width: auto;height: auto;">
+                    <h2 style="width: 343px;">Lista de Projetos</h2>
                 </div>
-            </nav>
+                <div class="col-md-4 d-flex justify-content-end align-self-start" style="width: auto;height: auto;"><i class="fas fa-search d-xl-flex justify-content-xl-center align-items-xl-center"></i><input class="border rounded d-xl-flex justify-content-xl-center align-items-xl-center search-field" type="search" id="search-field" style="background-color: #eaeaea;width: 80%;height: 38px;padding: 0px;margin-left: 17px;"
+                        name="search"></div>
+                <div class="col-md-4 d-flex justify-content-center align-items-center" style="width: auto;height: auto;"><button class="btn btn-primary d-flex align-items-center align-self-center" type="button" style="height: 38px;background-color: rgb(21,221,4);">Novo Projeto<i class="fa fa-plus-circle"></i></button></div>
+            </div>
+            <div class="row">
+                <div class="col-md-12"><table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Cliente</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+            <tr>
+                <td>Torta Mil Horas</td>
+                <td>Pasteles</td>
+                <td>23.500</td>
+                <td>
+                    <button type="button" class="btn btn-danger"><i class="far fa-trash-alt d-xl-flex justify-content-xl-center align-items-xl-center"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="fas fa-pencil-alt d-xl-flex justify-content-xl-center align-items-xl-center"></i></button>
+                    <button type="button" class="btn btn-primary"><i class="fa fa-archive d-xl-flex justify-content-xl-center align-items-xl-center" ></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table></div>
+            </div>
         </div>
     </div>
-    <div class="row" style="text-align:center">
-        <div class="col-xl-3 offset-xl-0" style="width: 300px;">
-            <h2 style="width: 300px;">Novo Projeto</h2>
-        </div>
-    </div>
-    <form style="width: 950px;height: 506px;margin: 20px;padding: 5px;font-size: 12px;">
-        <div class="form-row" style="height: 503px;">
-            <div class="col-xl-10 offset-xl-0">
-                <div class="form-row" style="margin: 3px;">
-                    <div class="col-xl-1" style="text-align:right"><label class="col-form-label">Título:</label></div>
-                    <div class="col-xl-11"><input class="form-control" type="text" id="titulo" style="width: 405px;"></div>
-                </div>
-                <div class="form-row" style="margin: 3px;">
-                    <div class="col-xl-1" style="text-align:right"><label class="col-form-label">Descrição:</label></div>
-                    <div class="col-xl-11"><input class="form-control" type="text" id="descricao" style="width: 650px;"></div>
-                </div>
-                <div class="form-row" style="margin: 3px;">
-                    <div class="col-xl-1" style="text-align:right"><label class="col-form-label">Cliente:</label></div>
-                    <div class="col-xl-4" style="width: 260px;"><select class="form-control" style="width: 250px;"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
-                    <div
-                        class="col-xl-2" style="text-align:right"><label class="col-form-label">Tempo Estimado:</label></div>
-                <div class="col-xl-1"><input class="form-control" type="text" id="estimativa"></div>
-                <div class="col-xl-3 offset-xl-0" style="margin: 5px;"><label>Equivalentes à:&nbsp;</label><label id="labelDias" onchange="calcHorasEq"></label></div>
-                <div class="col"><button class="btn btn-primary" type="button" style="width: 30px;height: 30px;margin: 3px;" onclick="calcEstimativa()"></button></div>
-            </div>
-            <div class="form-row" style="margin: 3px;">
-                <div class="col-xl-2 offset-xl-1" style="text-align: right;"><label class="col-form-label">Início Previsto:</label></div>
-                <div class="col-xl-3"><input class="form-control" id="iniprev" type="date"></div>
-                <div class="col-xl-2" style="text-align:right"><label class="col-form-label">Termino Previsto:</label></div>
-                <div class="col-xl-3"><input class="form-control" id="termprev" type="date"></div>
-            </div>
-            <div class="form-row" style="margin: 3px;">
-                <div class="col-xl-2 offset-xl-1" style="text-align: right;"><label class="col-form-label">Início da Execução:</label></div>
-                <div class="col-xl-3"><input class="form-control" id="iniexec" type="date"></div>
-                <div class="col-xl-2" style="text-align:right"><label class="col-form-label">Entrega:</label></div>
-                <div class="col-xl-3"><input class="form-control" type="date"></div>
-            </div>
-            <div class="form-row" style="margin: 3px;">
-                <div class="col-xl-2 offset-xl-2" style="width: 802px;text-align:right"><label class="col-form-label">Proposta Atrelada:</label></div>
-                <div class="col-xl-4"><select class="form-control" id="proposta"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
-            </div>
-            <div class="form-row" style="margin: 3px;">
-                <div class="col-xl-2 offset-xl-2" style="width: 802;text-align:right"><label class="col-form-label">Situação do Projeto:</label></div>
-                <div class="col-xl-2"><select class="form-control" id="sit" style="width: 80;"><optgroup label="This is a group"><option value="12" selected="">This is item 1</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select></div>
-            </div>
-            <div class="form-row" style="height: 100px;"></div>
-            <div class="form-row" style="height: 60px;">
-                <div class="col-xl-2 offset-xl-10" style="height: 60px;"><button class="btn btn-primary" type="button" style="margin: 10px;">SALVAR</button></div>
-            </div>
-        </div>
-        </div>
-    </form>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/novoProjeto.js"></script>
